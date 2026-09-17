@@ -218,6 +218,16 @@
     },
     {
       "kind": "llm.model",
+      "id": "gpt-image-2",
+      "value": {
+        "name": "gpt-image-2",
+        "provider": {
+          "reference": "openai-cpa"
+        }
+      }
+    },
+    {
+      "kind": "llm.model",
       "id": "gpt-image-2.5",
       "value": {
         "name": "gpt-image-2.5",
