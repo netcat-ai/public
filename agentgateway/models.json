@@ -44,6 +44,20 @@
     },
     {
       "kind": "llm.model",
+      "id": "c3314121-1894-4bea-9f01-d37720ebe1e7",
+      "value": {
+        "id": "c3314121-1894-4bea-9f01-d37720ebe1e7",
+        "name": "go/grok-4.6",
+        "provider": {
+          "reference": "opencode-responses"
+        },
+        "transformation": {
+          "model": "llmRequest.model.stripPrefix(\"go/\")"
+        }
+      }
+    },
+    {
+      "kind": "llm.model",
       "id": "ce6de11c-5923-4c85-b80a-92aa31c37960",
       "value": {
         "id": "ce6de11c-5923-4c85-b80a-92aa31c37960",
