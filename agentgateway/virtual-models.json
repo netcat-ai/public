@@ -1,0 +1,25 @@
+{
+  "resources": [
+    {
+      "kind": "llm.virtualModel",
+      "id": "siyun-gpt-ds",
+      "value": {
+        "name": "siyun-gpt-ds",
+        "routing": {
+          "failover": {
+            "targets": [
+              {
+                "model": "gpt-6-astra",
+                "priority": 0
+              },
+              {
+                "model": "deepseek-flash",
+                "priority": 1
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

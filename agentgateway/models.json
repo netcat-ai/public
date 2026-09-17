@@ -1,0 +1,267 @@
+{
+  "resources": [
+    {
+      "kind": "llm.model",
+      "id": "2fad5432-ed1e-4139-875c-5329a3519451",
+      "value": {
+        "id": "2fad5432-ed1e-4139-875c-5329a3519451",
+        "name": "deepseek-flash",
+        "health": {
+          "eviction": {
+            "duration": "60s",
+            "consecutiveFailures": 1
+          }
+        },
+        "provider": {
+          "reference": "deepseek"
+        }
+      }
+    },
+    {
+      "kind": "llm.model",
+      "id": "659d4eb8-3e14-47e2-b8af-5be3746f2cb0",
+      "value": {
+        "id": "659d4eb8-3e14-47e2-b8af-5be3746f2cb0",
+        "name": "grok-4.6",
+        "provider": {
+          "reference": "opencode-responses"
+        }
+      }
+    },
+    {
+      "kind": "llm.model",
+      "id": "c1eaa0dd-e318-4cea-ac5b-015ae7ae8e0b",
+      "value": {
+        "id": "c1eaa0dd-e318-4cea-ac5b-015ae7ae8e0b",
+        "name": "k8ray/*",
+        "provider": {
+          "reference": "k8ray"
+        },
+        "transformation": {
+          "model": "llmRequest.model.stripPrefix(\"k8ray/\")"
+        }
+      }
+    },
+    {
+      "kind": "llm.model",
+      "id": "ce6de11c-5923-4c85-b80a-92aa31c37960",
+      "value": {
+        "id": "ce6de11c-5923-4c85-b80a-92aa31c37960",
+        "name": "go/*",
+        "provider": {
+          "reference": "opencode"
+        },
+        "transformation": {
+          "model": "llmRequest.model.stripPrefix(\"go/\")"
+        }
+      }
+    },
+    {
+      "kind": "llm.model",
+      "id": "claude-opus-4-6-thinking",
+      "value": {
+        "name": "claude-opus-4-6-thinking",
+        "provider": {
+          "reference": "claude-cpa"
+        }
+      }
+    },
+    {
+      "kind": "llm.model",
+      "id": "claude-sonnet-4-6",
+      "value": {
+        "name": "claude-sonnet-4-6",
+        "provider": {
+          "reference": "claude-cpa"
+        }
+      }
+    },
+    {
+      "kind": "llm.model",
+      "id": "codex-auto-review",
+      "value": {
+        "name": "codex-auto-review",
+        "provider": {
+          "reference": "openai-cpa"
+        }
+      }
+    },
+    {
+      "kind": "llm.model",
+      "id": "deepseek-v4-pro",
+      "value": {
+        "name": "deepseek-v4-pro",
+        "provider": {
+          "reference": "deepseek"
+        }
+      }
+    },
+    {
+      "kind": "llm.model",
+      "id": "feb43405-a2b2-48e0-9553-739b17e293ef",
+      "value": {
+        "id": "feb43405-a2b2-48e0-9553-739b17e293ef",
+        "name": "gpt-6-astra",
+        "health": {
+          "eviction": {
+            "duration": "60s",
+            "consecutiveFailures": 1
+          }
+        },
+        "provider": {
+          "reference": "openai-cpa"
+        }
+      }
+    },
+    {
+      "kind": "llm.model",
+      "id": "gemini-3.1-flash-image",
+      "value": {
+        "name": "gemini-3.1-flash-image",
+        "provider": {
+          "reference": "gcp.gemini"
+        }
+      }
+    },
+    {
+      "kind": "llm.model",
+      "id": "gemini-3.5-flash-lite",
+      "value": {
+        "name": "gemini-3.5-flash-lite",
+        "provider": {
+          "reference": "gcp.gemini"
+        }
+      }
+    },
+    {
+      "kind": "llm.model",
+      "id": "gemini-3.6-flash-high",
+      "value": {
+        "name": "gemini-3.6-flash-high",
+        "provider": {
+          "reference": "gcp.gemini"
+        }
+      }
+    },
+    {
+      "kind": "llm.model",
+      "id": "gemini-3.7-flash-high",
+      "value": {
+        "name": "gemini-3.7-flash-high",
+        "provider": {
+          "reference": "gcp.gemini"
+        }
+      }
+    },
+    {
+      "kind": "llm.model",
+      "id": "gemini-3.8-flash-high",
+      "value": {
+        "name": "gemini-3.8-flash-high",
+        "provider": {
+          "reference": "gcp.gemini"
+        }
+      }
+    },
+    {
+      "kind": "llm.model",
+      "id": "gpt-5.3-codex-spark",
+      "value": {
+        "name": "gpt-5.3-codex-spark",
+        "provider": {
+          "reference": "openai-cpa"
+        }
+      }
+    },
+    {
+      "kind": "llm.model",
+      "id": "gpt-5.5",
+      "value": {
+        "name": "gpt-5.5",
+        "provider": {
+          "reference": "openai-cpa"
+        }
+      }
+    },
+    {
+      "kind": "llm.model",
+      "id": "gpt-5.6-luna",
+      "value": {
+        "name": "gpt-5.6-luna",
+        "provider": {
+          "reference": "openai-cpa"
+        }
+      }
+    },
+    {
+      "kind": "llm.model",
+      "id": "gpt-5.6-sol",
+      "value": {
+        "name": "gpt-5.6-sol",
+        "provider": {
+          "reference": "openai-cpa"
+        }
+      }
+    },
+    {
+      "kind": "llm.model",
+      "id": "gpt-5.6-terra",
+      "value": {
+        "name": "gpt-5.6-terra",
+        "provider": {
+          "reference": "openai-cpa"
+        }
+      }
+    },
+    {
+      "kind": "llm.model",
+      "id": "gpt-image-2.5",
+      "value": {
+        "name": "gpt-image-2.5",
+        "provider": {
+          "reference": "openai-cpa"
+        }
+      }
+    },
+    {
+      "kind": "llm.model",
+      "id": "gpt-oss-120b-medium",
+      "value": {
+        "name": "gpt-oss-120b-medium",
+        "provider": {
+          "reference": "openai-cpa"
+        }
+      }
+    },
+    {
+      "kind": "llm.model",
+      "id": "kimi-k3",
+      "value": {
+        "name": "kimi-k3",
+        "provider": {
+          "reference": "opencode"
+        }
+      }
+    },
+    {
+      "kind": "llm.model",
+      "id": "mimo-v2.5",
+      "value": {
+        "name": "mimo-v2.5",
+        "provider": {
+          "reference": "opencode"
+        }
+      }
+    },
+    {
+      "kind": "llm.model",
+      "id": "mimo-v2.5-pro",
+      "value": {
+        "name": "mimo-v2.5-pro",
+        "provider": {
+          "reference": "opencode"
+        }
+      }
+    }
+  ]
+}

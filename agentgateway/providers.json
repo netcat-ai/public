@@ -1,0 +1,136 @@
+{
+  "resources": [
+    {
+      "kind": "llm.provider",
+      "id": "claude-cpa",
+      "value": {
+        "name": "claude-cpa",
+        "params": {
+          "apiKey": "$CLIPROXYAPI_API_KEY",
+          "baseUrl": "http://127.0.0.1:8317/v1"
+        },
+        "provider": "anthropic"
+      }
+    },
+    {
+      "kind": "llm.provider",
+      "id": "deepseek",
+      "value": {
+        "name": "deepseek",
+        "params": {
+          "apiKey": "$DEEPSEEK_API_KEY"
+        },
+        "provider": "deepseek"
+      }
+    },
+    {
+      "kind": "llm.provider",
+      "id": "gcp.gemini",
+      "value": {
+        "name": "gcp.gemini",
+        "params": {
+          "apiKey": "$CLIPROXYAPI_API_KEY",
+          "baseUrl": "http://127.0.0.1:8317"
+        },
+        "provider": {
+          "custom": {
+            "formats": [
+              {
+                "type": "completions"
+              },
+              {
+                "type": "responses"
+              },
+              {
+                "type": "generateContent"
+              },
+              {
+                "type": "geminiCountTokens"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "kind": "llm.provider",
+      "id": "k8ray",
+      "value": {
+        "name": "k8ray",
+        "params": {
+          "apiKey": "$K8RAY_API_KEY",
+          "baseUrl": "https://airgate.k8ray.com"
+        },
+        "provider": "openai"
+      }
+    },
+    {
+      "kind": "llm.provider",
+      "id": "openai-cpa",
+      "value": {
+        "name": "openai-cpa",
+        "params": {
+          "apiKey": "$CLIPROXYAPI_API_KEY",
+          "baseUrl": "http://127.0.0.1:8317/v1"
+        },
+        "provider": "openai"
+      }
+    },
+    {
+      "kind": "llm.provider",
+      "id": "opencode",
+      "value": {
+        "name": "opencode",
+        "params": {
+          "apiKey": "$OPENCODE_GO_API_KEY",
+          "baseUrl": "https://opencode.ai/zen/go/v1"
+        },
+        "defaults": {
+          "requestHeaders": {
+            "set": {
+              "user-agent": "netcat-gateway/1.0",
+              "x-opencode-session": "netcat-gw-0001"
+            }
+          }
+        },
+        "provider": {
+          "custom": {
+            "formats": [
+              {
+                "type": "completions"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "kind": "llm.provider",
+      "id": "opencode-responses",
+      "value": {
+        "name": "opencode-responses",
+        "params": {
+          "apiKey": "$OPENCODE_GO_API_KEY",
+          "baseUrl": "https://opencode.ai/zen/go/v1"
+        },
+        "defaults": {
+          "requestHeaders": {
+            "set": {
+              "user-agent": "netcat-gateway/1.0",
+              "x-opencode-session": "netcat-gw-0001"
+            }
+          }
+        },
+        "provider": {
+          "custom": {
+            "formats": [
+              {
+                "type": "responses"
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}
