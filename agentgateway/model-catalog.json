@@ -8287,7 +8287,19 @@
           }
         },
         "custom": {
-          "providers": {}
+          "providers": {
+            "ucloud": {
+              "models": {
+                "deepseek-v4.1-flash": {
+                  "rates": {
+                    "input": "0.12",
+                    "output": "0.48",
+                    "cacheRead": "0.0024"
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }

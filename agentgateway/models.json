@@ -275,6 +275,19 @@
           "reference": "opencode"
         }
       }
+    },
+    {
+      "kind": "llm.model",
+      "id": "ucloud/deepseek-v4.1-flash",
+      "value": {
+        "name": "ucloud/deepseek-v4.1-flash",
+        "provider": {
+          "reference": "ucloud"
+        },
+        "transformation": {
+          "model": "llmRequest.model.stripPrefix(\"ucloud/\")"
+        }
+      }
     }
   ]
 }

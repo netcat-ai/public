@@ -141,7 +141,16 @@
           "apiKey": "$UCLOUD_API_KEY",
           "baseUrl": "https://api.modelverse.cn/v1"
         },
-        "provider": "deepseek"
+        "provider": {
+          "custom": {
+            "formats": [
+              {
+                "type": "completions"
+              }
+            ],
+            "providerOverride": "ucloud"
+          }
+        }
       }
     }
   ]
