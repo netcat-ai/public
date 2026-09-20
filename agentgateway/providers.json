@@ -131,6 +131,18 @@
           }
         }
       }
+    },
+    {
+      "kind": "llm.provider",
+      "id": "ucloud",
+      "value": {
+        "name": "ucloud",
+        "params": {
+          "apiKey": "$UCLOUD_API_KEY",
+          "baseUrl": "https://api.modelverse.cn/v1"
+        },
+        "provider": "deepseek"
+      }
     }
   ]
 }
