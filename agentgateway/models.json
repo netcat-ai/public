@@ -254,7 +254,7 @@
         "provider": {
           "reference": "typesafe"
         },
-        "passthrough": "opaque"
+        "passthrough": "detect"
       }
     },
     {
