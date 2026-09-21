@@ -19,6 +19,17 @@
     },
     {
       "kind": "llm.model",
+      "id": "b08d85b2-f083-41e8-94c9-ab3c0c184df5",
+      "value": {
+        "id": "b08d85b2-f083-41e8-94c9-ab3c0c184df5",
+        "name": "deepseek-v4.1-flash",
+        "provider": {
+          "reference": "deepseek"
+        }
+      }
+    },
+    {
+      "kind": "llm.model",
       "id": "c1eaa0dd-e318-4cea-ac5b-015ae7ae8e0b",
       "value": {
         "id": "c1eaa0dd-e318-4cea-ac5b-015ae7ae8e0b",
