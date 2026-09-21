@@ -134,6 +134,18 @@
     },
     {
       "kind": "llm.provider",
+      "id": "typesafe",
+      "value": {
+        "name": "typesafe",
+        "params": {
+          "apiKey": "$TYPESAFE_API_KEY",
+          "baseUrl": "https://api.typesafe.ai"
+        },
+        "provider": "openai"
+      }
+    },
+    {
+      "kind": "llm.provider",
       "id": "ucloud",
       "value": {
         "name": "ucloud",

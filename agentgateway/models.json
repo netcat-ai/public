@@ -248,6 +248,17 @@
     },
     {
       "kind": "llm.model",
+      "id": "jev-latest",
+      "value": {
+        "name": "jev-latest",
+        "provider": {
+          "reference": "typesafe"
+        },
+        "passthrough": "opaque"
+      }
+    },
+    {
+      "kind": "llm.model",
       "id": "kimi-k3",
       "value": {
         "name": "kimi-k3",
