@@ -59,7 +59,7 @@
         "name": "k8ray",
         "params": {
           "apiKey": "$K8RAY_API_KEY",
-          "baseUrl": "https://airgate.k8ray.com"
+          "baseUrl": "https://airgate.k8ray.com/v1"
         },
         "provider": "openai"
       }
@@ -139,7 +139,7 @@
         "name": "typesafe",
         "params": {
           "apiKey": "$TYPESAFE_API_KEY",
-          "baseUrl": "https://api.typesafe.ai"
+          "baseUrl": "https://api.typesafe.ai/v1"
         },
         "provider": "openai"
       }
