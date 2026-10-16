@@ -78,16 +78,6 @@
     },
     {
       "kind": "llm.model",
-      "id": "codex-auto-review",
-      "value": {
-        "name": "codex-auto-review",
-        "provider": {
-          "reference": "openai-cpa"
-        }
-      }
-    },
-    {
-      "kind": "llm.model",
       "id": "deepseek-v4-pro",
       "value": {
         "name": "deepseek-v4-pro",
