@@ -185,6 +185,16 @@
     },
     {
       "kind": "llm.model",
+      "id": "gemini-4-argon",
+      "value": {
+        "name": "gemini-4-argon",
+        "provider": {
+          "reference": "gemini-web"
+        }
+      }
+    },
+    {
+      "kind": "llm.model",
       "id": "gpt-5.3-codex-spark",
       "value": {
         "name": "gpt-5.3-codex-spark",

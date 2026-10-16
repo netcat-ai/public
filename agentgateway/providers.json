@@ -54,6 +54,18 @@
     },
     {
       "kind": "llm.provider",
+      "id": "gemini-web",
+      "value": {
+        "name": "gemini-web",
+        "params": {
+          "apiKey": "$CLIPROXYAPI_API_KEY",
+          "baseUrl": "http://127.0.0.1:8083/v1"
+        },
+        "provider": "openai"
+      }
+    },
+    {
+      "kind": "llm.provider",
       "id": "k8ray",
       "value": {
         "name": "k8ray",
