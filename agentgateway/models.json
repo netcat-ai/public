@@ -305,6 +305,16 @@
     },
     {
       "kind": "llm.model",
+      "id": "gpt-image-2.5-sunburst",
+      "value": {
+        "name": "gpt-image-2.5-sunburst",
+        "provider": {
+          "reference": "openai-cpa"
+        }
+      }
+    },
+    {
+      "kind": "llm.model",
       "id": "gpt-oss-120b-medium",
       "value": {
         "name": "gpt-oss-120b-medium",
