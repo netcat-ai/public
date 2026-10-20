@@ -386,6 +386,19 @@
           "model": "llmRequest.model.stripPrefix(\"ucloud/\")"
         }
       }
+    },
+    {
+      "kind": "llm.model",
+      "id": "ucloud/deepseek-v4.1-flash-1017",
+      "value": {
+        "name": "ucloud/deepseek-v4.1-flash-1017",
+        "provider": {
+          "reference": "ucloud"
+        },
+        "transformation": {
+          "model": "llmRequest.model.stripPrefix(\"ucloud/\")"
+        }
+      }
     }
   ]
 }
